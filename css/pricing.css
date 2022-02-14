@@ -1,0 +1,328 @@
+@import url('../css/global.css');
+
+.pricing {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    color: var(--color-22343d);  
+}
+
+.pricing__pre-title,
+.enterprice__pre-title {
+    text-transform: uppercase;     
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;    
+    text-align: center;
+}
+
+.pricing__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.pricing__desc{
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Enter-price=============*/
+.enterprice {
+    background: linear-gradient(var(--bg-gradient));
+}
+
+.enterprice__content {
+    padding-top: 53px;
+    padding-bottom: 51px;
+    color: var(--color-22343d);
+    text-align: center;
+}
+
+.enterprice__title,
+.features__title,
+.quiz__title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 8px;
+}
+
+.enterprice__desc,
+.quiz__desc {
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+
+/* Enter-price===============*/
+/* Features==================*/
+.features {
+    padding: 150px 0;
+}
+
+.features__inner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features__inner.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.features__title {
+    text-align: center;
+    margin-bottom: 55px !important;
+    color: var(--color-22343d);
+}
+
+.features__banner {
+    width: 47%;
+    height: 393px;
+    background-image: url('../media/img/features/features.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.features__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.effect-type__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-22343d);
+    margin-bottom: 23px;
+    padding-left: 65px;
+    position: relative;
+}
+
+.effect-type__title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -7px;
+    width: 50px;
+    height: 50px;
+    background-color: #f4f5f7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.features__item:first-child .effect-type__title::before {
+    background-image: url('../media/img/features/enterpreneur.svg');
+}
+
+.features__item:nth-child(2) .effect-type__title::before {
+    background-image: url('../media/img/features/accountants.svg');
+}
+
+.features__item:last-child .effect-type__title::before {
+    background-image: url('../media/img/features/universities.svg');
+}
+
+.effect-type__desc {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-22343d);
+    max-width: 540px;
+}
+/* Features==================*/
+/* Quiz======================*/
+
+.quiz {
+    padding-bottom: 150px;
+    color: var(--color-22343d);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.quiz__title {
+    text-align: center;
+}
+
+.quiz__desc {
+    margin-bottom: 50px;
+}
+
+.quiz__list {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.quiz__item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e7e7e7;
+    overflow: hidden;
+}
+
+.quiz-item__top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 22px;
+}
+
+.quiz-item__btn {
+    width: 24px;
+    height: 24px;
+    background-color: #02897a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    margin-right: 16px;
+}
+
+.quiz-item__btn span {
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.first-line {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.first-line--rotate {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+}
+
+.quiz-item__question {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.quiz-item__answer {
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    height: 0;
+}
+
+.quiz-item__answer--active {
+    padding-bottom: 25px;
+    min-height: 100px;
+}
+
+/* Quiz======================*/
+/* ==========================*/
+/* Media=====================*/
+@media screen and (max-width: 1400px){
+    /* .container {max-width: 1320px;} */
+  }
+  
+@media screen and (max-width: 1200px){
+/* .container {max-width: 1140px;} */
+}
+  
+@media screen and (max-width: 1100px){
+
+    .features__inner {
+        justify-content: center;
+    }
+
+    .features__banner {
+        margin-bottom: 30px;
+    }
+
+    .features__banner,
+    .features__list {
+        width: 100%;
+    }
+
+    .effect-type__desc {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+/* .container {max-width: 960px;} */
+
+    .pricing,
+    .features,
+    .quiz {
+        padding: 100px 0;
+    }
+
+    .enterprice {
+        margin-bottom: 100px;
+    }
+
+    .features {
+        padding-top: 0 !important;
+    }
+
+    .features__list {
+        max-width: 80%;
+    }
+
+    .enterprice,
+    .quiz  {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .enterprice__content {
+        padding: 45px 0;
+    }
+
+
+
+}
+
+@media screen and (max-width: 767px){
+    .container {max-width: 720px;}
+
+.pricing__title {
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.enterprice__title {
+    font-size: 32px;
+    line-height: 48px;
+}
+}
+
+@media screen and (max-width: 576px){
+    .container {max-width: 540px;}
+}
+
+@media screen and (max-width: 576px){
+    .container {max-width: none;}
+}
+/* Media=====================*/
